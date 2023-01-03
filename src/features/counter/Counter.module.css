@@ -1,0 +1,76 @@
+.counter {
+  padding: 4rem 1.5rem;
+  background-color: #fcd1d1;
+  width: 40vw;
+  box-shadow: 4px 4px 20px rgba(134, 117, 169, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .counter {
+    width: 80vw;
+  }
+}
+
+.value {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #3a324b;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.main .icon {
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  height: 20px;
+}
+.main .icon:hover {
+  border: 2px solid #bbb;
+  /* background-color: #ece2e1; */
+}
+
+.amount-input {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.8rem 1.5rem;
+
+  width: 15rem;
+}
+
+.amount-input input {
+  border: 2px solid #8675a9;
+  background-color: #ece2e1;
+  grid-row: 1/3;
+  text-align: center;
+  font-size: 1.5rem;
+  height: 60%;
+  align-self: center;
+}
+.amount-input input:focus {
+  outline: none;
+  border: 2px solid #3a324b;
+}
+
+button {
+  padding: 10px 15px;
+  border: 2px solid transparent;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+button:hover {
+  border: 2px solid #aaa;
+}
